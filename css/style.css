@@ -115,11 +115,11 @@ h6 {
 @media (max-width: 333px) {
 
     #header .navbar .container .logo-text h1 {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     #header .navbar .container .logo-text p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
 }
@@ -138,7 +138,9 @@ h6 {
 }
 
 #intro .intro-container {
+    width: 100%;
     display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -175,7 +177,7 @@ h6 {
     transition: 0.5s;
     margin: 0 20px 20px 0;
     color: #222;
-    background-color: #ffffff63;
+    background-color: #69100b1a;
 
     &:hover {
         background: #e4ac3f;
@@ -186,6 +188,10 @@ h6 {
 
     #intro {
         margin-top: 5.25rem;
+    }
+
+    #intro .intro-container {
+        transform: translateY(50px);
     }
 
     #intro .intro-img {
@@ -209,7 +215,11 @@ h6 {
 @media (max-width: 574px) {
 
     #intro {
-        padding: 100px 0 20px 0;
+        padding: 350px 0 20px 0;
+    }
+
+    #intro .intro-container {
+        transform: translateY(-120px);
     }
 
 }
