@@ -1,0 +1,410 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+}
+
+a,
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    text-wrap: balance;
+}
+
+/*--------------------------------------------------------------
+  # Preload
+  --------------------------------------------------------------*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #e4ac3f;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+
+#header.header-scrolled,
+#header.header-pages {
+    height: 60px;
+    padding: 10px 0;
+}
+
+#header .navbar .container .navbar-brand img {
+    width: 3.5rem;
+    padding: 0;
+}
+
+#header .navbar .container .collapse .navbar-nav .nav-item .nav-link {
+    color: #222;
+    transition: 0.5s;
+
+    &:hover {
+        color: #690f0b !important;
+        background-color: #69100b31;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 357px) {
+
+    #header .navbar .container .navbar-brand img {
+        width: 2rem;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 333px) {
+
+    #header .navbar .container .logo-text h1 {
+        font-size: 18px;
+    }
+
+    #header .navbar .container .logo-text p {
+        font-size: 14px;
+    }
+
+}
+
+/*--------------------------------------------------------------
+  # Intro Section
+  --------------------------------------------------------------*/
+
+#intro {
+    width: 100%;
+    position: relative;
+    background: url("../img/img-potrait.jpg") center bottom no-repeat;
+    background-size: cover;
+    padding: 200px 0 480px 0;
+    margin-top: 5.7rem;
+}
+
+#intro .intro-container {
+    display: flex;
+    text-align: center;
+}
+
+#intro .intro-info {
+    width: 100%;
+    float: left;
+    position: relative;
+    top: 120px;
+}
+
+#intro .intro-info h2 {
+    color: #222;
+    font-size: 68px;
+    font-weight: 700;
+}
+
+#intro .intro-info h2 span {
+    color: #690f0b;
+}
+
+#intro .intro-info p {
+    color: #222;
+    font-weight: 600;
+}
+
+#intro .intro-info .btn-services {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 7px 16px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 0 20px 20px 0;
+    color: #222;
+    background-color: #ffffff63;
+
+    &:hover {
+        background: #e4ac3f;
+    }
+}
+
+@media (max-width: 991px) {
+
+    #intro {
+        margin-top: 5.25rem;
+    }
+
+    #intro .intro-img {
+        width: 80%;
+        float: none;
+        margin: 0 auto 25px auto;
+    }
+
+    #intro .intro-info {
+        width: 80%;
+        float: none;
+        text-align: center;
+        top: 25px;
+    }
+
+    #intro .intro-info h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 574px) {
+
+    #intro {
+        padding: 100px 0 20px 0;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    #intro .intro-info h2 {
+        font-size: 30px;
+    }
+
+}
+
+/*--------------------------------------------------------------
+  # nosotros
+  --------------------------------------------------------------*/
+
+#nosotros .row {
+    min-height: 400px;
+}
+
+#nosotros .image-column {
+    min-height: 400px;
+    background-image: url('../img/img-section-one.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Títulos y textos */
+#nosotros .nosotros-info h2 {
+    color: #222;
+    font-size: 68px;
+    font-weight: 700;
+}
+
+#nosotros .nosotros-info h2 span {
+    color: #690f0b;
+}
+
+#nosotros .nosotros-info p {
+    color: #222;
+    font-weight: 400;
+}
+
+@media (max-width: 992px) {
+
+    #nosotros .nosotros-info h2 {
+        text-align: center;
+    }
+
+    #nosotros .nosotros-info h2 span {
+        text-align: center;
+    }
+
+    #nosotros .nosotros-info h4 {
+        text-align: center;
+    }
+
+    #nosotros .nosotros-info p {
+        text-align: center;
+        text-wrap: balance !important;
+    }
+
+}
+
+@media (max-width: 426px) {
+
+    #nosotros .image-column {
+        min-height: 300px;
+    }
+
+    #nosotros .nosotros-info h2 {
+        font-size: 48px;
+    }
+
+}
+
+/*--------------------------------------------------------------
+  # servicios
+  --------------------------------------------------------------*/
+
+#servicios {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#servicios .container .row .col h3 {
+    color: #222;
+    margin-top: 10px;
+}
+
+#servicios .container .row .col i {
+    color: #e4ac3f;
+}
+
+/*--------------------------------------------------------------
+  # Logo section
+  --------------------------------------------------------------*/
+
+#patent-container {
+    padding: 60px 0;
+    background: #fff;
+}
+
+/*--------------------------------------------------------------
+  # Contacto
+  --------------------------------------------------------------*/
+
+#contacto {
+    overflow: hidden;
+}
+
+#contacto img {
+    width: 300px;
+    padding-bottom: 2em;
+}
+
+#contacto .section-header {
+    padding-bottom: 30px;
+}
+
+#contacto .container .row .map-container {
+    display: flex;
+    justify-content: center;
+}
+
+#contacto .container .row .map-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+}
+
+@media (max-width: 992px) {
+
+    #contacto .container .row .map-info-container {
+        justify-content: center;
+        text-align: center;
+        padding-top: 45px;
+        padding-left: 0px;
+    }
+
+}
+
+/*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+
+#footer {
+    background: #222;
+    padding: 0 0 30px 0;
+    color: #eee;
+    font-size: 14px;
+}
+
+#footer .copyright {
+    text-align: center;
+
+}
+
+#footer .credits {
+    text-align: center;
+    font-size: 13px;
+    color: #f1f7ff;
+}
+
+#footer .credits a {
+    color: #bfddfe;
+
+    &:hover {
+        color: #f1f7ff;
+    }
+}
+
+#footer .social-links {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    /* background: #fff; */
+    color: #e4ac3f;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border: 1px solid #e4ac3f;
+}
+
+#footer .social-links a:hover {
+    background: #e4ac3f;
+    color: #222;
+}
