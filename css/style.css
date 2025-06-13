@@ -81,6 +81,13 @@ h6 {
   # Header
   --------------------------------------------------------------*/
 
+#header .navbar {
+    background: #e4ac3f;
+    background: linear-gradient(-90deg, #e4ac3f 0%, #ffd983 80%);
+    background: -webkit-linear-gradient(-90deg, #e4ac3f 0%, #ffd983 80%);
+    background: -moz-linear-gradient(-90deg, #e4ac3f 0%, #ffd983 80%);
+}
+
 #header.header-scrolled,
 #header.header-pages {
     height: 60px;
@@ -92,15 +99,27 @@ h6 {
     padding: 0;
 }
 
+#header .navbar .container .navbar-brand .logo-text h1,
+#header .navbar .container .navbar-brand .logo-text p {
+    color: #222 !important;
+}
+
 #header .navbar .container .collapse .navbar-nav .nav-item .nav-link {
-    color: #222;
+    color: #222 !important;
     transition: 0.5s;
 
     &:hover {
         color: #690f0b !important;
         background-color: #69100b31;
+        ;
         border-radius: 10px;
     }
+}
+
+#header .navbar .navbar-toggler,
+#header .navbar .navbar-toggler .navbar-toggler-icon,
+#header .navbar .collapse .navbar-nav .nav-item .nav-link {
+    color: #fff !important;
 }
 
 @media (max-width: 357px) {
@@ -187,7 +206,7 @@ h6 {
 @media (max-width: 991px) {
 
     #intro {
-        margin-top: 5.25rem;
+        margin-top: 4rem;
     }
 
     #intro .intro-container {
@@ -219,7 +238,7 @@ h6 {
     }
 
     #intro .intro-container {
-        transform: translateY(-120px);
+        transform: translateY(-150px);
     }
 
 }
