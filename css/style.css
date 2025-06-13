@@ -116,10 +116,15 @@ h6 {
     }
 }
 
+#header .navbar .navbar-toggler-icon {
+    /* invierte el blanco a negro */
+    filter: invert(1) !important;
+}
+
 #header .navbar .navbar-toggler,
 #header .navbar .navbar-toggler .navbar-toggler-icon,
 #header .navbar .collapse .navbar-nav .nav-item .nav-link {
-    color: #fff !important;
+    color: #2222229f !important;
 }
 
 @media (max-width: 357px) {
